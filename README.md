@@ -37,10 +37,6 @@ To run the Moto-S website locally, follow these steps:
 2. Navigate to the project directory: `cd moto-s-website`
 3. Open the `index.html` file in your preferred web browser.
 
-## Deployment 🌐
-
-The website is currently deployed and hosted on [Netlify](https://www.netlify.com/). You can visit the live site at [moto-s.com](https://moto-s.com).
-
 ## Contributing 🤝
 
 We welcome contributions from the community! If you'd like to contribute to this project, please follow these steps:
