@@ -57,4 +57,5 @@ If you encounter any issues or bugs, please open a new issue in the repository. 
 
 ## License 📄
 
+<<<<<<< HEAD
 This project is licensed under the [MIT License](LICENSE).
