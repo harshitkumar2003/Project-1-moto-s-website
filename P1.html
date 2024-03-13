@@ -8,59 +8,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="P1.css">
+    <link rel="stylesheet" href="P1.js">
 </head>
 
 <body>
-    <!--welcome-hero start -->
-    <section id="home" class="welcome-hero">
+    <section class="welcome-hero">
+        <div class="header-area">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <!--left box for logo -->
+                        <div class="navbar-brand">
+                            <img src="logo.png" alt="logo"><span></span>
+                        </div>
 
-        <!-- top-area Start -->
-        <div class="top-area">
-            <div class="header-area">
-
-                <!-- Start Navigation -->
-
-                <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"
-                    data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
-                    <div class="container">
-
-                        <!-- Start Header Navigation -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target="#navbar-menu">
-                                <i class="fa fa-bars"></i>
-                            </button>
-                            <a class="navbar-brand" href="index.html">carvilla<span></span></a>
-
-                        </div><!--/.navbar-header-->
-                        <!-- End Header Navigation -->
-
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-                            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <div class="menubar" id="navbar-menu">
+                            <ul class="navlinks" data-in="fadeInDown" data-out="fadeOutUp">
                                 <li class=" scroll active"><a href="#home">home</a></li>
                                 <li class="scroll"><a href="#service">service</a></li>
-                                <li class="scroll"><a href="#featured-cars">featured cars</a></li>
-                                <li class="scroll"><a href="#new-cars">new cars</a></li>
+                                <li class="scroll"><a href="#featured-cars">featured bikes</a></li>
+                                <li class="scroll"><a href="#new-cars">new bikes</a></li>
                                 <li class="scroll"><a href="#brand">brands</a></li>
                                 <li class="scroll"><a href="#contact">contact</a></li>
-                            </ul><!--/.nav -->
-                        </div><!-- /.navbar-collapse -->
-                    </div><!--/.container-->
-                </nav><!--/nav-->
-                <!-- End Navigation -->
-            </div><!--/.header-area-->
-            <div class="clearfix"></div>
-
-        </div><!-- /.top-area-->
-        <!-- top-area End -->
-
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
         <div class="container">
             <div class="welcome-hero-txt">
-                <h2>get your desired car in resonable price</h2>
+                <h2>A Masterpiece of Engineering and Design</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
+                    This beast is built for those who crave speed, power, and an unparalleled riding experience.
+                    Prepare to leave convention in the dust and embrace the exhilaration of pure, unadulterated freedom.
                 </p>
                 <button class="welcome-btn" onclick="window.location.href='#'">contact us</button>
             </div>
@@ -179,133 +164,38 @@
                 </div>
             </div>
         </div>
-
-    </section><!--/.welcome-hero-->
-    <!--welcome-hero end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--welcome-hero start -->
-    <section id="home" class="welcome-hero">
-        <!-- top-area Start -->
-        <div class="top-area">
-            <div class="header-area">
-                <!-- Start Navigation -->
-                <div class="nav">
-                    <!-- Start Header Navigation -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <!-- left box for logo -->
-                        <div class="left">
-                            <img src="logo.png" alt="logo">
-                        </div>
-                        <!-- End Header Navigation -->
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <!-- mid box for menubar -->
-                        <div class="mid" id="navbar-menu">
-                            <ul class="menubar" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li class=" scroll active"><a href="#home">home</a></li>
-                                <li class="scroll"><a href="#service">service</a></li>
-                                <li class="scroll"><a href="#new-cars">new cars</a></li>
-                                <li class="scroll"><a href="#brand">brands</a></li>
-                                <li class="scroll"><a href="#contact">contact</a></li>
-                            </ul>
-                        </div>
-                        <!-- right box for buttons -->
-                        <div class="right">
-                            <button class="btn">Login &#x2192;</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Header Navigation -->
-                <div class="homepage">
-                    <div class="welcome-hero-txt">
-                        <h2>A Masterpiece of Engineering and Design</h2>
-                        <p>
-                            This beast is built for those who crave speed, power, and an unparalleled riding experience.
-                            Prepare to
-                            leave convention in the dust and embrace the exhilaration of pure, unadulterated freedom.
-                        </p>
-                        <button class="welcome-btn" onclick="window.location.href='#'">contact us</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-    <!--welcome-hero end -->
-    <!-- <header class="header">
-             left box for logo -->
-
-    <!-- <div class="left">
-                <img src="logo.png" alt="logo">
-            </div> -->
-    <!-- <div class="mid">
-        <ul class="menubar">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">About-Us</a></li>
-            <li><a href="#">Contact-Us</a></li>
-        </ul>
-    </div> -->
-    <!-- right box for buttons -->
-    <!-- <div class="right">
-                <button class="btn">Login &#x2192;</button>
-            </div> -->
-    <!-- </header> -->
-
-    <!-- <div class="prg">
-        <p id="main">Introducing the All-New Moto-S<br>A Masterpiece of Engineering and Design</p>
-        <br>
-        <p id="mid">The Moto-S isn't just a motorcycle;</p>
-        <p id="lower">it's a statement of rebellion against the ordinary with its thunderous engine and aggressive
-            stance, it demands attention on every road. Surrender to the call of the open road with the Moto-S.
-            This beast is built for those who crave speed, power, and an unparalleled riding experience. Prepare to
-            leave convention in the dust and embrace the exhilaration of pure, unadulterated freedom.</p>
-    </div> -->
-    <div class="bg"></div>
-    <section>
-        <p>this is harshit motobike we are welcome the wise versa the ultimate number of people Lorem ipsum
-            dolor sit
-            amet conserepudiandae dolorem quas ab non, magni neque nostrum porro
-            labore doloribus ipsum odit earum quaerat, repellat itaque sequi. Quis sed reprehenderit
-            voluptatum porro.
-            Temporibus corporis saepe repellat maxime odio placeat ab, consectetur laborum ullam nam autem
-            officia ex
-            beatae! Mollitia impedit enim numquam laudantium est aut magnam voluptas voluptates, laborum
-            amet quae modi?
-            Neque in, ratione explicabo, sit quia aspernatur saepe vero maiores deleniti illum accusamus
-            vitae optio,
-            laboriosam minus sequi quaerat. Fugit et enim temporibus animi? Maxime reiciendis qui optio esse
-            facere.
-            Sed omnis, voluptatem iure suscipit fuga nemo veniam voluptates quidem provident hic quo atque
-            recusandae?
-            Ipsa, obcaecati? Ad placeat ratione expedita architecto, ipsa molestiae repellat beatae optio
-            iusto, sint
-            Aliquid odit ratione, iste illo labore minus libero nam exercitationem eveniet quisquam magnam
-            eius quas
-            aspernatur sint animi quia. Dicta incidunt provident eaque unde accusamus ratione architecto
-            aspernatur non
-            aliquid.
-            Sed, quaerat veniam. Qui quibusdam expedita fugiat officiis, possimus voluptatibus eos iusto
-            error adipisci
-            illum voluptates, quos mollitia suscipit nemo beatae facilis, quasi ut assumenda doloribus
-            consectetur
-            perspiciatis. Dolore, enim. </p>
+    <p>this is harshit motobike we are welcome the wise versa the ultimate number of people Lorem ipsum
+        dolor sit
+        amet conserepudiandae dolorem quas ab non, magni neque nostrum porro
+        labore doloribus ipsum odit earum quaerat, repellat itaque sequi. Quis sed reprehenderit
+        voluptatum porro.
+        Temporibus corporis saepe repellat maxime odio placeat ab, consectetur laborum ullam nam autem
+        officia ex
+        beatae! Mollitia impedit enim numquam laudantium est aut magnam voluptas voluptates, laborum
+        amet quae modi?
+        Neque in, ratione explicabo, sit quia aspernatur saepe vero maiores deleniti illum accusamus
+        vitae optio,
+        laboriosam minus sequi quaerat. Fugit et enim temporibus animi? Maxime reiciendis qui optio esse
+        facere.
+        Sed omnis, voluptatem iure suscipit fuga nemo veniam voluptates quidem provident hic quo atque
+        recusandae?
+        Ipsa, obcaecati? Ad placeat ratione expedita architecto, ipsa molestiae repellat beatae optio
+        iusto, sint
+        Aliquid odit ratione, iste illo labore minus libero nam exercitationem eveniet quisquam magnam
+        eius quas
+        aspernatur sint animi quia. Dicta incidunt provident eaque unde accusamus ratione architecto
+        aspernatur non
+        aliquid.
+        Sed, quaerat veniam. Qui quibusdam expedita fugiat officiis, possimus voluptatibus eos iusto
+        error adipisci
+        illum voluptates, quos mollitia suscipit nemo beatae facilis, quasi ut assumenda doloribus
+        consectetur
+        perspiciatis. Dolore, enim. </p>
     </section>
-    <div id="bg">
-        <div class="container">
+
+    <div class="container">
+        <div class="registerform">
             <h1>Reserve Your Moto-S Today</h1>
             <form action="noaction.php">
                 <div class="formentries">
