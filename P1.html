@@ -11,31 +11,66 @@
 </head>
 
 <body>
-    <div class="bgh">
-        <header class="header">
+    <div class="nav">
+        <!-- Start Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
             <!-- left box for logo -->
-
             <div class="left">
                 <img src="logo.png" alt="logo">
             </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <!-- mid box for menubar -->
-            <div class="mid">
-                <ul class="menubar">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">About-Us</a></li>
-                    <li><a href="#">Contact-Us</a></li>
+            <div class="mid" id="navbar-menu">
+                <ul class="menubar" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class=" scroll active"><a href="#home">home</a></li>
+                    <li class="scroll"><a href="#service">service</a></li>
+                    <li class="scroll"><a href="#new-cars">new cars</a></li>
+                    <li class="scroll"><a href="#brand">brands</a></li>
+                    <li class="scroll"><a href="#contact">contact</a></li>
                 </ul>
             </div>
             <!-- right box for buttons -->
             <div class="right">
-                <button class="btn">Book Now</button>
-                <button class="btn">Email Us</button>
+                <button class="btn">Login &#x2192;</button>
             </div>
+        </div>
     </div>
-    </header>
-    <br>
-    <div class="prg">
+    <!-- End Header Navigation -->
+
+    <div class="homepage">
+        <div class="welcome">
+            <h2>A Masterpiece of Engineering and Design</h2>
+            <p>
+                This beast is built for those who crave speed, power, and an unparalleled riding experience. Prepare to
+            leave convention in the dust and embrace the exhilaration of pure, unadulterated freedom. 
+            </p>
+            <button class="welcome-btn" onclick="window.location.href='#'">contact us</button>
+        </div>
+    </div>
+    <!-- <header class="header">
+             left box for logo -->
+
+    <!-- <div class="left">
+                <img src="logo.png" alt="logo">
+            </div> -->
+    <!-- <div class="mid">
+        <ul class="menubar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">About-Us</a></li>
+            <li><a href="#">Contact-Us</a></li>
+        </ul>
+    </div> -->
+    <!-- right box for buttons -->
+    <!-- <div class="right">
+                <button class="btn">Login &#x2192;</button>
+            </div> -->
+    <!-- </header> -->
+    
+    <!-- <div class="prg">
         <p id="main">Introducing the All-New Moto-S<br>A Masterpiece of Engineering and Design</p>
         <br>
         <p id="mid">The Moto-S isn't just a motorcycle;</p>
@@ -43,10 +78,26 @@
             stance, it demands attention on every road. Surrender to the call of the open road with the Moto-S.
             This beast is built for those who crave speed, power, and an unparalleled riding experience. Prepare to
             leave convention in the dust and embrace the exhilaration of pure, unadulterated freedom.</p>
-    </div>
-    <div></div>
-    <div></div>
-    <div class="bg">
+    </div> -->
+    <div class="bg"></div>
+    <section>
+        <p>this is harshit motobike we are welcome the wise versa the ultimate number of people Lorem ipsum dolor sit
+            amet conserepudiandae dolorem quas ab non, magni neque nostrum porro
+            labore doloribus ipsum odit earum quaerat, repellat itaque sequi. Quis sed reprehenderit voluptatum porro.
+            Temporibus corporis saepe repellat maxime odio placeat ab, consectetur laborum ullam nam autem officia ex
+            beatae! Mollitia impedit enim numquam laudantium est aut magnam voluptas voluptates, laborum amet quae modi?
+            Neque in, ratione explicabo, sit quia aspernatur saepe vero maiores deleniti illum accusamus vitae optio,
+            laboriosam minus sequi quaerat. Fugit et enim temporibus animi? Maxime reiciendis qui optio esse facere.
+            Sed omnis, voluptatem iure suscipit fuga nemo veniam voluptates quidem provident hic quo atque recusandae?
+            Ipsa, obcaecati? Ad placeat ratione expedita architecto, ipsa molestiae repellat beatae optio iusto, sint
+            Aliquid odit ratione, iste illo labore minus libero nam exercitationem eveniet quisquam magnam eius quas
+            aspernatur sint animi quia. Dicta incidunt provident eaque unde accusamus ratione architecto aspernatur non
+            aliquid.
+            Sed, quaerat veniam. Qui quibusdam expedita fugiat officiis, possimus voluptatibus eos iusto error adipisci
+            illum voluptates, quos mollitia suscipit nemo beatae facilis, quasi ut assumenda doloribus consectetur
+            perspiciatis. Dolore, enim. </p>
+    </section>
+    <div id="bg">
         <div class="container">
             <h1>Reserve Your Moto-S Today</h1>
             <form action="noaction.php">
@@ -70,23 +121,6 @@
             </form>
         </div>
     </div>
-    <section>
-        <p>this is harshit motobike we are welcome the wise versa the ultimate number of people Lorem ipsum dolor sit
-            amet conserepudiandae dolorem quas ab non, magni neque nostrum porro
-            labore doloribus ipsum odit earum quaerat, repellat itaque sequi. Quis sed reprehenderit voluptatum porro.
-            Temporibus corporis saepe repellat maxime odio placeat ab, consectetur laborum ullam nam autem officia ex
-            beatae! Mollitia impedit enim numquam laudantium est aut magnam voluptas voluptates, laborum amet quae modi?
-            Neque in, ratione explicabo, sit quia aspernatur saepe vero maiores deleniti illum accusamus vitae optio,
-            laboriosam minus sequi quaerat. Fugit et enim temporibus animi? Maxime reiciendis qui optio esse facere.
-            Sed omnis, voluptatem iure suscipit fuga nemo veniam voluptates quidem provident hic quo atque recusandae?
-            Ipsa, obcaecati? Ad placeat ratione expedita architecto, ipsa molestiae repellat beatae optio iusto, sint
-            Aliquid odit ratione, iste illo labore minus libero nam exercitationem eveniet quisquam magnam eius quas
-            aspernatur sint animi quia. Dicta incidunt provident eaque unde accusamus ratione architecto aspernatur non
-            aliquid.
-            Sed, quaerat veniam. Qui quibusdam expedita fugiat officiis, possimus voluptatibus eos iusto error adipisci
-            illum voluptates, quos mollitia suscipit nemo beatae facilis, quasi ut assumenda doloribus consectetur
-            perspiciatis. Dolore, enim. </p>
-    </section>
 </body>
 
 </html>
