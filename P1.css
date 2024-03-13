@@ -48,40 +48,43 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 5em;
-  }
-  
-  .menubar {
+}
+
+.menubar {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
-  }
-  
-  /* Horizontal Navigation */
-  .navlinks {
+    flex-grow: 1;shape-image-threshold: ;
+    right: 2em;
+}
+
+/* Horizontal Navigation */
+.navlinks {
     font-size: 1.5em;
     list-style-type: none;
     margin: 25px;
     right: 2em;
+    margin: 40px;
     padding: 0;
     display: flex;
     justify-content: center;
-  }
-  
-  .navlinks li {
+}
+
+.navlinks li {
     margin-right: 53px;
-  }
-  
-  .navlinks li a {
+    margin-right: 10px;
+}
+
+.navlinks li a {
     text-decoration: none;
     color: #333;
-    padding: 10px;
-  }
-  
-  .navlinks li.active a {
+    padding: 65px;
+}
+
+.navlinks li.active a {
     color: #007bff;
-  }
-  
-  /* Toggle Button */
+}
+
+/* Toggle Button */
 .navbar-toggle {
     display: none;
     font-size: 24px;
@@ -123,7 +126,7 @@ body {
 --------------------------------------------
       Vertical Navigation 
 -------------------------------------------- */
- /* Responsive Styles */
+/* Responsive Styles */
 
 @media (max-width: 768px) {
     .navbar-toggle {
@@ -131,39 +134,39 @@ body {
     }
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .menubar {
-      display: none;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      z-index: 1;
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
     }
-  
-    .navlinks {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 20px;
-    }
-  
-    .navlinks li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  
-    .navbar-toggle {
-      display: block;
-    }
-  
-    .menubar.show {
-      display: block;
-    }
-  }
 
-  /*-------------------------------------
+    .navlinks {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navlinks li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .menubar.show {
+        display: block;
+    }
+}
+
+/*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
 .welcome-hero {
@@ -197,7 +200,7 @@ body {
 .welcome-hero-txt {
     text-align: center;
     padding: 290px 0 372px;
-  
+
 }
 
 .welcome-hero-txt h2 {
