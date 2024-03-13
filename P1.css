@@ -1,3 +1,6 @@
+/*-------------------------------------
+        1. Reset css
+--------------------------------------*/
 * {
     margin: 0px;
     padding: 0px;
@@ -20,118 +23,225 @@ body {
     height: 11rem;
 }
 
-.left {
-    display: inline-block;
-    position: absolute;
-    left: 1em;
-    top: 0.5rem;
-    /* border: 2px solid gold; */
-}
-
-.left img {
-    width: 110px;
+/*-------------------------------------
+        2. Navbar brand (logo)
+--------------------------------------*/
+.navbar-brand img {
+    width: 66px;
     -webkit-filter: brightness(0) invert(1);
     filter: brightness(0) invert(1);
-}
-
-.mid {
     display: inline-block;
     position: absolute;
-    width: 100%;
-    top: 6.8rem;
-    text-align: center;
-    /* border: 2px solid blue; */
+    left: 2em;
+    top: 0.5rem;
+    padding: 0px 0px;
 }
 
-.menubar {
-    display: inline-block;
-}
-
-.menubar li {
-    display: inline-block;
-    /* font-size: 24px; */
-}
-
-.menubar li a {
-    margin: 50px;
+/*-------------------------------------
+        3. Navbar menu(links)
+---------------------------------------
+         Horizontal Navigation 
+--------------------------------------*/
+/* Center the menubar */
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+  }
+  
+  .menubar {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  /* Horizontal Navigation */
+  .navlinks {
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navlinks li {
+    margin-right: 10px;
+  }
+  
+  .navlinks li a {
     text-decoration: none;
-    background-color: transparent;
-    color: white;
-    padding: 15px;
-    /* border: 1px solid white; */
-    border-radius: 26px;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .navlinks li.active a {
+    color: #007bff;
+  }
+  
+  /* Toggle Button */
+.navbar-toggle {
+    display: none;
     font-size: 24px;
-    font-family: sans-serif;
-}
-
-.menubar li a:hover,
-.menubar li a.active {
-    background-color: white;
-    color: black;
-}
-
-.right {
-    position: absolute;
-    right: 1.5em;
-    top: 0px;
-    display: inline-block;
-    /* border: 2px solid green; */
-}
-
-.btn {
-    margin: 20px 3px;
-    background-color: transparent;
-    color: white;
-    padding: 10px 10px;
-    border: 1px solid white;
-    border-radius: 26px;
-    font-size: 24px;
+    background: none;
+    border: none;
     cursor: pointer;
-    font-family: sans-serif;
-
+    padding: 10px;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: white;
-    color: black;
+.navbar-toggle:hover {
+    color: #007bff;
 }
 
-.homepage {
-    background-image: url(bg.jpg);
+.navbar-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: currentColor;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/*------------------------------------------
+      Responsive Styles
+--------------------------------------------
+      Vertical Navigation 
+-------------------------------------------- */
+ /* Responsive Styles */
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+  @media (max-width: 768px) {
+    .menubar {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+  
+    .navlinks {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .navlinks li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .menubar.show {
+      display: block;
+    }
+  }
+
+  /*-------------------------------------
+        3.  Welcome-hero
+--------------------------------------*/
+.welcome-hero {
+    position: relative;
+    background: url(bg.png)no-repeat;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 35em;
+    z-index: 1;
+    opacity: 1.5;
+}
+
+.welcome-hero:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background: rgba(4, 4, 5, 0.6);
 }
 
-.welcome h2 {
-    justify-content: center;
-    text-align: center;
-    font-size: 3em;
-    font-family: "Dancing Script", cursive;
-    font-weight: 1000;
+.header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
 }
 
-.welcome p {
-    margin-bottom: 4em;
-    font-size: 2.4em;
-    font-family: "Dancing Script", cursive;
-    font-weight: 600;
+/*.welcome-hero-txt*/
+.welcome-hero-txt {
     text-align: center;
-
-
+    padding: 290px 0 372px;
+  
 }
 
-/* .prg #lower {
-    font-size: 1.5em;
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    margin-bottom: .5em;
+.welcome-hero-txt h2 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.welcome-hero-txt p {
+    font-size: 18px;
+    text-transform: initial;
+    color: #fff;
     font-weight: 500;
-} */
+    max-width: 735px;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-.container {
+.welcome-btn {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    background: #4e4ffa;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 55px;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.welcome-btn:hover {
+    background: #0102fa;
+}
+
+
+
+
+
+.registerform {
     backdrop-filter: blur(7px);
     border: 1px solid white;
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
@@ -142,7 +252,7 @@ body {
     z-index: -1;
 }
 
-.container h1 {
+.registerform h1 {
     font-size: 3em;
     font-family: 'Helvetica Neue';
     text-align: center;
@@ -162,7 +272,7 @@ body {
     border-radius: 6px;
 }
 
-.container button {
+.registerform button {
     color: white;
     background-color: black;
     width: 60%;
@@ -176,7 +286,7 @@ body {
     font-family: sans-serif;
 }
 
-.container button:hover {
+.registerform button:hover {
     color: rgb(255, 255, 255);
     background-color: rgba(115, 125, 167, 0.667);
 }
