@@ -45,43 +45,41 @@ body {
 /* Center the menubar */
 .navbar-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 5em;
 }
 
 .menubar {
     display: flex;
-    justify-content: center;
-    flex-grow: 1;shape-image-threshold: ;
-    right: 2em;
+    justify-content: right;
+    flex-grow: 1;
 }
 
 /* Horizontal Navigation */
 .navlinks {
-    font-size: 1.5em;
+    font-size: 1.2em;
     list-style-type: none;
-    margin: 25px;
-    right: 2em;
-    margin: 40px;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: center;
 }
 
 .navlinks li {
-    margin-right: 53px;
-    margin-right: 10px;
+    margin-right: 1em;
+    position: relative;
+    left: 2em;
 }
 
 .navlinks li a {
     text-decoration: none;
-    color: #333;
-    padding: 65px;
+    color: #ffffff;
+    padding: 1.4rem;
 }
 
 .navlinks li.active a {
-    color: #007bff;
+    color: #1e74d1;
 }
 
 /* Toggle Button */
@@ -153,7 +151,7 @@ body {
     }
 
     .navlinks li {
-        margin-right: 0;
+        margin-right: 10px;
         margin-bottom: 10px;
     }
 
@@ -175,17 +173,17 @@ body {
     background-position: center;
     background-size: cover;
     z-index: 1;
-    opacity: 1.5;
 }
 
-.welcome-hero:before {
+.welcome-hero-txt:before {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(4, 4, 5, 0.6);
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
 }
 
 .header-area {
@@ -193,7 +191,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
+    z-index: +1;
 }
 
 /*.welcome-hero-txt*/
@@ -204,32 +202,133 @@ body {
 }
 
 .welcome-hero-txt h2 {
-    font-size: 42px;
+    font-size: 4em;
     color: #fff;
-    font-weight: 700;
+    font-weight: 90;
     text-transform: uppercase;
     margin-bottom: 45px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .welcome-hero-txt p {
-    font-size: 18px;
+    font-size: 1.6em;
     text-transform: initial;
     color: #fff;
-    font-weight: 500;
-    max-width: 735px;
+    font-weight: 90;
+    max-width: 40rem;
     margin: 0 auto;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .welcome-btn {
+    font-size: 28px;
+    font-weight: 190;
     display: inline-block;
-    width: 230px;
-    height: 60px;
-    background: #4e4ffa;
-    color: #fff;
+    width: 15rem;
+    height: 6rem;
+    background: #0c0c0f;
+    color: #a02727;
+    border-radius: 1em;
+    margin-top: 4em;
+}
+
+.welcome-btn:hover {
+    background : black;
+    color: white;
+}
+
+/*-------------------------------------
+        4. Model-Search
+--------------------------------------*/
+.model-search-content .col-sm-12 {
+    padding: 0;
+}
+
+.model-search-content {
+    padding: 40px 0;
+    background: #fff;
+    box-shadow: 0 10px 40px 0px rgba(38, 40, 64, .2);
+    position: absolute;
+    bottom: -150px;
+    width: 50%;
     border-radius: 3px;
-    margin-top: 55px;
+    justify-content: center;
+}
+
+/*.single-model-search*/
+.single-model-search {
+    margin-bottom: 30px;
+}
+
+.single-model-search:last-child {
+    margin-bottom: 0;
+}
+
+.single-model-search h2 {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+/*model-select-icon*/
+.model-select-icon {
+    position: relative;
+}
+
+.model-select-icon .form-control {
+    outline: 0 !important;
+    box-shadow: none;
+    border: 1px solid #f8f8f8;
+    background: #f8f8f8;
+    height: 60px;
+}
+
+.model-select-icon select {
+    font-size: 16px;
+    color: #888f9d;
+    text-transform: capitalize;
+}
+
+.model-select-icon:after {
+    position: absolute;
+    content: "\f103";
+    right: 0px;
+    top: 0;
+    font-size: 10px;
+    color: #888f9d;
+    background: #f9f8f8;
+    height: 60px;
+    line-height: 60px;
+    width: 50px;
+    text-align: center;
+    font-family: "Flaticon";
+    pointer-events: none;
+    border: transparent;
+}
+
+/*model-select-icon*/
+.welcome-btn.model-search-btn {
+    width: 160px;
+    margin-top: 80px;
+    margin-left: 53px;
+}
+
+/*.single-model-search*/
+
+/*-------------------------------------
+        5. Service 
+--------------------------------------*/
+.service {
+    padding: 260px 0 87px;
+}
+
+.single-service-item {
+    text-align: center;
+    padding: 55px 30px 60px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    border: 1px solid #dadfe9;
     -webkit-transition: .3s linear;
     -moz-transition: .3s linear;
     -ms-transition: .3s linear;
@@ -237,8 +336,65 @@ body {
     transition: .3s linear;
 }
 
-.welcome-btn:hover {
-    background: #0102fa;
+.single-service-icon {
+    display: inline-block;
+    color: #50616c;
+}
+
+.single-service-item h2 a {
+    font-size: 20px;
+    margin: 35px 0 20px;
+}
+
+.single-service-item h2 a span {
+    text-transform: lowercase;
+}
+
+.single-service-item p {
+    padding-bottom: 35px;
+    text-transform: initial;
+    position: relative;
+}
+
+.single-service-item p:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 3px;
+    background: #3030ea;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.single-service-icon [class^="flaticon-"]:before,
+.single-service-icon[class*=" flaticon-"]:before,
+.single-service-icon [class^="flaticon-"]:after,
+.single-service-icon [class*=" flaticon-"]:after {
+    font-size: 60px;
+}
+
+.single-service-item:hover .single-service-icon [class^="flaticon-"]:before,
+.single-service-item:hover .single-service-icon [class*=" flaticon-"]:before,
+.single-service-item:hover .single-service-icon [class^="flaticon-"]:after,
+.single-service-item:hover .single-service-icon [class*=" flaticon-"]:after {
+    color: #fff;
+}
+
+
+.single-service-item:hover h2 a,
+.single-service-item:hover p {
+    color: #fff;
+}
+
+.single-service-item:hover p:before {
+    background: #fff;
+}
+
+.single-service-item:hover {
+    box-shadow: 0 12px 30px 0px rgba(0, 1, 193, .2);
+    background: #4e4ffa;
+    border: 1px solid #4e4ffa;
 }
 
 
@@ -292,5 +448,5 @@ body {
 
 .registerform button:hover {
     color: rgb(255, 255, 255);
-    background-color: rgba(115, 125, 167, 0.667);
+    background-color: rgba(0, 0, 0, 0.667);
 }
