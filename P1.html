@@ -6,43 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshit Moto-S</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="P1.css">
     <link rel="stylesheet" href="P1.js">
 </head>
 
 <body>
-    <section class="welcome-hero">
-        <div class="header-area">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <!--left box for logo -->
-                        <div class="navbar-brand">
-                            <img src="logo.png" alt="logo"><span></span>
-                        </div>
+    <nav class="navbar">
 
-                        <div class="menubar" id="navbar-menu">
-                            <ul class="navlinks" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li class=" scroll active"><a href="#home">home</a></li>
-                                <li class="scroll"><a href="#service">service</a></li>
-                                <li class="scroll"><a href="#featured-cars">featured bikes</a></li>
-                                <li class="scroll"><a href="#new-cars">new bikes</a></li>
-                                <li class="scroll"><a href="#brand">brands</a></li>
-                                <li class="scroll"><a href="#contact">contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+        <!--left box for logo -->
+        <div class="navbar-brand">
+            <img src="logo.png" alt="logo"><span></span>
         </div>
-        
+
+        <!-- mid box for menubar -->
+        <div class="menubar" id="navbar-menu">
+            <ul class="navlinks" data-in="fadeInDown" data-out="fadeOutUp">
+                <li class=" scroll active"><a href="#home">home</a></li>
+                <li class="scroll"><a href="#service">service</a></li>
+                <li class="scroll"><a href="#featured-cars">featured bikes</a></li>
+                <li class="scroll"><a href="#new-cars">new bikes</a></li>
+                <li class="scroll"><a href="#brand">brands</a></li>
+                <li class="scroll"><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+
+        <!-- tooglebar button  -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">menu</button>
+    </nav>
+
+    <section class="welcome">
         <div class="container">
-            <div class="welcome-hero-txt">
-                <h2>A Masterpiece of Engineering and Design</h2>
+            <div class="welcome-txt">
+                <h2>get your desired bike in reasonable price</h2>
                 <p>
                     This beast is built for those who crave speed, power, and an unparalleled riding experience.
                     Prepare to leave convention in the dust and embrace the exhilaration of pure, unadulterated freedom.
@@ -50,119 +46,77 @@
                 <button class="welcome-btn" onclick="window.location.href='#'">contact us</button>
             </div>
         </div>
-
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="model-search-content">
-                        <div class="row">
-                            <div class="col-md-offset-1 col-md-2 col-sm-12">
-                                <div class="single-model-search">
-                                    <h2>select year</h2>
-                                    <div class="model-select-icon">
-                                        <select class="form-control">
-                                            <option value="default">year</option><!-- /.option-->
-                                            <option value="2018">2021</option><!-- /.option-->
-                                            <option value="2018">2022</option><!-- /.option-->
-                                            <option value="2017">2023</option><!-- /.option-->
-                                            <option value="2016">2024</option><!-- /.option-->
+            <h2>Making HTML dropdowns not suck</h2>
 
-                                        </select><!-- /.select-->
-                                    </div><!-- /.model-select-icon -->
-                                </div>
-                                <div class="single-model-search">
-                                    <h2>body style</h2>
-                                    <div class="model-select-icon">
-                                        <select class="form-control">
+            <span class="color-picker"></span>
 
-                                            <option value="default">style</option><!-- /.option-->
+            <br /><br />
 
-                                            <option value="sedan">sedan</option><!-- /.option-->
+            <span class="custom-dropdown big">
+                <select>
+                    <option>Sherlock Holmes</option>
+                    <option>The Great Gatsby</option>
+                    <option>V for Vendetta</option>
+                    <option>The Wolf of Wallstreet</option>
+                    <option>Quantum of Solace</option>
+                </select>
+            </span>
 
-                                            <option value="van">van</option><!-- /.option-->
-                                            <option value="roadster">roadster</option><!-- /.option-->
+            <span class="custom-dropdown">
+                <select>
+                    <option>Sherlock Holmes</option>
+                    <option>The Great Gatsby</option>
+                    <option>V for Vendetta</option>
+                    <option>The Wolf of Wallstreet</option>
+                    <option>Quantum of Solace</option>
+                </select>
+            </span>
 
-                                        </select><!-- /.select-->
-                                    </div><!-- /.model-select-icon -->
-                                </div>
-                            </div>
-                            <div class="col-md-offset-1 col-md-2 col-sm-12">
-                                <div class="single-model-search">
-                                    <h2>select make</h2>
-                                    <div class="model-select-icon">
-                                        <select class="form-control">
+            <span class="custom-dropdown small">
+                <select>
+                    <option>Sherlock Holmes</option>
+                    <option>The Great Gatsby</option>
+                    <option>V for Vendetta</option>
+                    <option>The Wolf of Wallstreet</option>
+                    <option>Quantum of Solace</option>
+                </select>
+            </span>
 
-                                            <option value="default">make</option><!-- /.option-->
+            <br />
 
-                                            <option value="toyota">toyota</option><!-- /.option-->
+            <span class="custom-dropdown big">
+                <select disabled>
+                    <option>Sherlock Holmes</option>
+                    <option>The Great Gatsby</option>
+                    <option>V for Vendetta</option>
+                    <option>The Wolf of Wallstreet</option>
+                    <option>Quantum of Solace</option>
+                </select>
+            </span>
 
-                                            <option value="holden">holden</option><!-- /.option-->
-                                            <option value="maecedes-benz">maecedes-benz.</option><!-- /.option-->
+            <span class="custom-dropdown">
+                <select disabled>
+                    <option>Sherlock Holmes</option>
+                    <option>The Great Gatsby</option>
+                    <option>V for Vendetta</option>
+                    <option>The Wolf of Wallstreet</option>
+                    <option>Quantum of Solace</option>
+                </select>
+            </span>
 
-                                        </select><!-- /.select-->
-                                    </div><!-- /.model-select-icon -->
-                                </div>
-                                <div class="single-model-search">
-                                    <h2>car condition</h2>
-                                    <div class="model-select-icon">
-                                        <select class="form-control">
-
-                                            <option value="default">condition</option><!-- /.option-->
-
-                                            <option value="something">something</option><!-- /.option-->
-
-                                            <option value="something">something</option><!-- /.option-->
-                                            <option value="something">something</option><!-- /.option-->
-
-                                        </select><!-- /.select-->
-                                    </div><!-- /.model-select-icon -->
-                                </div>
-                            </div>
-                            <div class="col-md-offset-1 col-md-2 col-sm-12">
-                                <div class="single-model-search">
-                                    <h2>select model</h2>
-                                    <div class="model-select-icon">
-                                        <select class="form-control">
-
-                                            <option value="default">model</option><!-- /.option-->
-
-                                            <option value="kia-rio">kia-rio</option><!-- /.option-->
-
-                                            <option value="mitsubishi">mitsubishi</option><!-- /.option-->
-                                            <option value="ford">ford</option><!-- /.option-->
-
-                                        </select><!-- /.select-->
-                                    </div><!-- /.model-select-icon -->
-                                </div>
-                                <div class="single-model-search">
-                                    <h2>select price</h2>
-                                    <div class="model-select-icon">
-                                        <select class="form-control">
-
-                                            <option value="default">price</option><!-- /.option-->
-
-                                            <option value="$0.00">$0.00</option><!-- /.option-->
-
-                                            <option value="$0.00">$0.00</option><!-- /.option-->
-                                            <option value="$0.00">$0.00</option><!-- /.option-->
-
-                                        </select><!-- /.select-->
-                                    </div><!-- /.model-select-icon -->
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-12">
-                                <div class="single-model-search text-center">
-                                    <button class="welcome-btn model-search-btn" onclick="window.location.href='#'">
-                                        search
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <span class="custom-dropdown small">
+                <select disabled>
+                    <option>Sherlock Holmes</option>
+                    <option>The Great Gatsby</option>
+                    <option>V for Vendetta</option>
+                    <option>The Wolf of Wallstreet</option>
+                    <option>Quantum of Solace</option>
+                </select>
+            </span>
         </div>
     </section>
+
     <p>this is harshit motobike we are welcome the wise versa the ultimate number of people Lorem ipsum
         dolor sit
         amet conserepudiandae dolorem quas ab non, magni neque nostrum porro
