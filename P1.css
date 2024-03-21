@@ -214,7 +214,7 @@ body {
 }
 
 .welcome-txt p {
-    
+    padding: 0 20px 0;
     font-size: 1.5em;
     text-transform: initial;
     color: #fff;
@@ -222,7 +222,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.welcome-btn {
+.home-btn {
     font-size: 28px;
     font-weight: 190;
     display: inline-block;
@@ -234,7 +234,7 @@ body {
     margin-top: 2.2em;
 }
 
-.welcome-btn:hover {
+.home-btn:hover {
     background: black;
     color: white;
 }
