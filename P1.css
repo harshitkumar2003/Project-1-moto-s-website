@@ -200,14 +200,14 @@ body {
 
 .welcome-txt {
     text-align: center;
-    padding:  275px 20px 90px;
+    padding:  130px 20px 90px;
 }
 
 .welcome-txt h2 {
     font-family: "Alegreya Sans SC", sans-serif;
     font-weight: 900;
     font-style: italic;
-    font-size: 3em;
+    font-size: 2.6em;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: .4em;
@@ -222,23 +222,41 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.home-btn {
+/* .loginbtn {
     font-size: 28px;
     font-weight: 190;
     display: inline-block;
     width: 15rem;
-    height: 6rem;
+    height: 5.5rem;
     background: #0c0c0f;
     color: #a02727;
     border-radius: .5em;
     margin-top: 2.2em;
+    cursor: pointer;
 }
 
-.home-btn:hover {
+.loginbtn:hover{
     background: black;
     color: white;
+} */
+.login {
+    color: white;
+    background-color: black;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin: 8px auto;
+    padding: 6px;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    font-family: sans-serif;
 }
 
+.login:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.667);
+}
 
 
 
